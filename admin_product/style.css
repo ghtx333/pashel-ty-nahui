@@ -1,0 +1,106 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body{
+  font-family: system-ui, -apple-system, sans-serif;
+  padding: 20px;
+}
+
+main{
+  display: flex;
+  gap: 10px;
+}
+
+main > div {
+  width: 100%;
+  padding: 15px;
+}
+
+li{
+  margin-left: 20px;
+}
+.logo{
+  display: block;
+  margin: auto;
+  margin-bottom: 20px;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  background: #E4E3E3;
+  max-width: 1000px; 
+  padding: 20px;
+  border-radius: 30px;
+  gap: 20px;
+  /* min-height: 500px; */
+  margin: auto;
+}
+
+
+
+.card_form{
+  display: flex;
+  gap: 20px;
+  width: 100%;
+}
+.main-form{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 10px; 
+}
+.main-form_label{
+  font-size: 14px;
+  display: block;
+  margin-bottom: 5px;
+}
+.main-form_input,
+.main-form_button,
+.form_input,
+.form_button {
+  width: 100%;  
+  padding: 15px;
+  border-radius: 5px;
+}
+.form_label{
+  font-size: 14px;
+}
+.form_button{
+  background-color: #5E5BFF;
+  color: #ffffff;
+  width: 180px;
+}
+
+.main-form_button{
+  background-color: #5E5BFF;
+  color: #ffffff;
+}
+
+.card_error{
+  width: 300px; 
+  color: #ED2929;
+  border: 2px solid #ED2929;
+  padding: 10px 0; 
+  text-align: center;
+  border-radius: 5px; 
+}
+
+.info {
+  display: flex;
+  flex-direction: column; 
+  gap: 5px;
+}
+
+
+@media (max-width:576px) {
+  main{
+   flex-direction: column;
+  }
+  .empty-block{
+    display: none;
+  }
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <img class="logo" src="../img/logo.svg" width="100" alt="logo">
+  <div class="card">
+    <form class="card_form">
+      <input  class="form_input" type="text" placeholder="Введите логин пользователя или назвиние товара">
+      <button class="form_button" type="submit">Поиск</button>
+    </form>
+    <main>
+      <div class="info">
+        <p>ID: id</p>
+        <p>Логин: username</p>
+        <p>Баланс: balance</p>
+        <p>Дата регистрации: date</p>
+        <p>Приобретённые товары:</p>
+        <ul>
+          <li>product</li>
+        </ul>
+      </div>
+      <form class="main-form">
+        <div>
+          <label class="main-form_label">Изменить баланс</label>
+          <input  class="main-form_input" type="text" placeholder="Введите изменение баланса ">
+        </div>
+        <div>
+          <label class="main-form_label">Добавить продукт</label>
+          <input  class="main-form_input" type="text" placeholder="Введите название продукта">
+        </div>
+        <button class="main-form_button" type="submit">Обновить</button>
+      </form>
+      <div class="history">
+        <p class="history_header">История транзакций</p>
+        <div class="history_items">
+          <p class="error">18-01-2023 21:40 -2000</p>
+          <p class="success">18-01-2023 20:40 +1000</p>
+        </div>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

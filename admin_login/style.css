@@ -1,0 +1,71 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body{
+  font-family: system-ui, -apple-system, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 40px;
+  height: 100vh;
+  padding: 20px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #E4E3E3;
+  width: fit-content; 
+  padding: 20px 100px;
+  border-radius: 30px;
+  gap: 20px;
+}
+
+.card_header{
+  font-weight: normal;
+  font-size: 24px;
+  text-align: center;
+}
+
+.card_form{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 300px;
+}
+.form_input,
+.form_button {
+  width: 100%;  
+  padding: 15px;
+  border-radius: 5px;
+  font-size: 14px;
+}
+.form_label{
+  font-size: 14px;
+}
+.form_button{
+  background-color: #5E5BFF;
+  color: #ffffff;
+}
+
+.card_error{
+  width: 300px; 
+  color: #ED2929;
+  border: 2px solid #ED2929;
+  padding: 10px 0; 
+  text-align: center;
+  border-radius: 5px; 
+}
+
+@media (max-width:460px) {
+  .card {
+    padding: 20px;
+  }
+  
+}
